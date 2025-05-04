@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f5f7fa, #c3cfe2);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      position: relative;
+      background: url('./slider/vs.jpg') no-repeat center/cover;
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    header h1 {
+      position: relative;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      line-height: 300px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #333;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    li {
+      border: 2px solid #ddd;
+      border-radius: 15px;
+      padding: 15px;
+      background: white;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .menu-details h3 {
+      font-size: 18px;
+      color: #007bff;
+      margin: 10px 0;
+    }
+
+    .menu-details p {
+      font-size: 16px;
+      color: #555;
+      margin: 5px 0 10px;
+      font-weight: bold;
+    }
+
+    .pesan-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pesan-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .pesan-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Warung Sederhana</h1>
+  </header>
+  <main>
+    <section>
+      <h2>PT Yummy Bite</h2>
+      <ul>
+          </li>
+          <li>
+          <img src="./image/JS.jpg" alt="Risol Mayo">
+          <div class="menu-details">
+            <h3>Risol Mayo</h3>
+            <p>Harga: Rp1.000</p>
+          </div>
+          <a href="order.html?menu=Risol%20Mayo&harga=1000" class="pesan-btn">Pesan</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
